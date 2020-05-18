@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+        <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+        <!-- bootstrap 4.4.1 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <!-- hover.css 2.3.1 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+        <!-- Font awesome 5.12.1 -->
+        <script src="https://kit.fontawesome.com/fdc5880dc5.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/fontawesome.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/solid.min.js"></script>
+
+        <title>Korea Travel</title>
+    </head>
+
+    <body>
+        <!-- add div "class = wrap" for footer at bottom always -->
+        <div class="wrap">
+            <header>
+                <!-- Script - For Bootstrap Navbar : https://getbootstrap.com/docs/4.4/components/navbar/ -->
+                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <h3>Korea Travel</h3>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler01" aria-controls="navbarToggler01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggler01">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="search.html">Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Images' sources : Please refer on the README.me file -->
+            <section class="container-fluid">
+                <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+                <div class="mainpage">
+                
+                    <h3 class="section-heading">Short information about Korea...</h3>
+                    <div class="jump_link">
+                    <button type="button" class="btn btn-success" onclick="searchFunction()" id="jump_to_search" title="Jump to search"><i class="fas fa-map-marked-alt"></i>	&nbsp;Navigator	&nbsp;<i class="fas fa-route"></i></button>
+                    <button type="button" class="btn btn-success" onclick="widgetsFunction()" id="jump_to_widgets" title="Jump to widgets"><i class="fas fa-cloud-sun-rain"></i> 	&nbsp;Weather & <br/>Currency &nbsp; <i class="fas fa-coins"></i></button>
+                    </div>
+                    <div class="row imggroup">
+                        <div class="col-12 col-sm-12 col-md-12 indeximg">
+                            <figure>
+                            <img class="img-fluid main-img" src="assets/image/the_landscape.jpg" alt="the_landscape.jpg" />
+                            </figure>
+                            <p>Short information about Korea</p>
+                                <table class="basic-info">
+                                    <tr>
+                                        <td>Official Language</td>
+                                        <td>Korean</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Area (total)</td>
+                                        <td>100,363 km2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Population (2019)</td>
+                                        <td>51 million</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capital</td>
+                                        <td>Seoul</td>
+                                    </tr>
+                                    <tr>
+                                        <td>President (2017-)</td>
+                                        <td>Moon, Jae-In</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Currency</td>
+                                        <td>Korean won (₩)</td>
+                                    </tr>
+                                </table>
+                            
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-3 indeximg">
+                            <img class="img-fluid" src="assets/image/spring_korea.jpg" alt="spring_korea.jpg" />
+                            
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-3 indeximg">
+                            <img class="img-fluid" src="assets/image/summer_korea.jpg" alt="summer_korea.jpg" />
+                            
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-3 indeximg">
+                            <img class="img-fluid" src="assets/image/autumn_korea.jpg" alt="autumn_korea.jpg" />
+                            
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-3 indeximg">
+                            <img class="img-fluid" src="assets/image/winter_korea.jpg" alt="winter_korea.jpg" />
+                            
+                        </div>
+                        <p class="info-text">The Republic of Korea lies in the temperate zone with four distinct seasons. Geographically, it is located in the middle latitudes of the Northern Hemisphere, on the east coast of the Eurasian Continent and also adjacent to the Western Pacific. It shows, therefore complex climate characteristics which reveal both continental and oceanic features. It has a wide temperature difference between summer and winter and much precipitation in comparison with that of the Continent. Also, it has distinct monsoon wind, a rainy period from the East-Asian Monsoon locally called "Changma", typhoon, and while often heavy snowfalls in winter. It belongs to a relatively wet region due to much more precipitation than that of the world average.</p>
+                    </div>
+
+                    <div class="row" id="widget_div">
+                        <div class="col-12 col-sm-12 col-md-6 widgets">
+
+                            <div class="widget-weather">
+                                <h6>Today's Weather</h6>
+                                <div>
+                                    <div class="widget-group">
+                                        <a
+                                            class="weatherwidget-io"
+                                            href="https://forecast7.com/en/37d57126d98/seoul/"
+                                            data-label_1="SEOUL"
+                                            data-label_2="WEATHER"
+                                            data-font="Trebuchet MS"
+                                            data-icons="Climacons Animated"
+                                            data-days="3"
+                                            data-theme="weather_one"
+                                        >
+                                            SEOUL WEATHER
+                                        </a>
+                                    </div>
+                                    <div class="widget-group">
+                                        <a
+                                            class="weatherwidget-io"
+                                            href="https://forecast7.com/en/37d46126d71/incheon/"
+                                            data-label_1="INCHEON"
+                                            data-label_2="WEATHER"
+                                            data-font="Trebuchet MS"
+                                            data-icons="Climacons Animated"
+                                            data-days="3"
+                                            data-theme="weather_one"
+                                        >
+                                            INCHEON WEATHER
+                                        </a>
+                                    </div>
+                                    <div class="widget-group">
+                                        <a
+                                            class="weatherwidget-io"
+                                            href="https://forecast7.com/en/35d18129d08/busan/"
+                                            data-label_1="BUSAN"
+                                            data-label_2="WEATHER"
+                                            data-font="Trebuchet MS"
+                                            data-icons="Climacons Animated"
+                                            data-days="3"
+                                            data-theme="weather_one"
+                                        >
+                                            BUSAN WEATHER
+                                        </a>
+                                    </div>
+                                    <button class="weather-button" onclick="plusDivs(-1, 0)">&#10094;</button>
+                                    <button class="weather-button" onclick="plusDivs(1, 0)">&#10095;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 widgets">
+                            
+                            <div class="widget-currency">
+                                <h6>Today's currency rate</h6>
+                                <div class="currency jumbotron bg-cover">
+                                    <div class="widget-group2 eur-kor">
+                                        <div class="toKor">
+                                            <div>1 EUR =</div>
+                                            <div class="cal EUR-KRW"></div>
+                                            <div>KRW</div>
+                                            <br />
+
+                                            <div class="fromKor">
+                                                <div>1 KRW =</div>
+                                                <div class="cal KRW-EUR"></div>
+                                                <div>EUR</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="widget-group2 usd-kor">
+                                        <div class="toKor">
+                                            <div>1 USD =</div>
+                                            <div class="cal USD-KRW"></div>
+                                            <div>KRW</div>
+                                            <br />
+
+                                            <div class="fromKor">
+                                                <div>1 KRW =</div>
+                                                <div class="cal KRW-USD"></div>
+                                                <div>USD</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="widget-group2 gbp-kor">
+                                        <div class="toKor">
+                                            <div>1 GBP =</div>
+                                            <div class="cal GBP-KRW"></div>
+                                            <div>KRW</div>
+                                            <br />
+
+                                            <div class="fromKor">
+                                                <div>1 KRW =</div>
+                                                <div class="cal KRW-GBP"></div>
+                                                <div>GBP</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="widget-group2 sek-kor">
+                                        <div class="toKor">
+                                            <div>1 SEK =</div>
+                                            <div class="cal SEK-KRW"></div>
+                                            <div>KRW</div>
+                                            <br />
+
+                                            <div class="fromKor">
+                                                <div>1 KRW =</div>
+                                                <div class="cal KRW-SEK"></div>
+                                                <div>SEK</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                    <button class="currency-button" onclick="plusDivs2(-1, 0)">&#10094;</button>
+                                    <button class="currency-button" onclick="plusDivs2(1, 0)">&#10095;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </section>
+        </div>
+
+        <footer>
+            <div class="social">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com/ss831">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.linkedin.com/in/songhei-lee-a7ba04139/">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">Linkedin</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/ss831_/">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=south+korea+travel">
+                            <i class="fab fa-youtube-square" aria-hidden="true"></i>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+        <script src="assets/js/function.js"></script>
+        
+    <script src="assets/js/topbutton.js"></script>
+    </body>
+</html>
