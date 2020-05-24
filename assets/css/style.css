@@ -2,7 +2,7 @@
 html, body {
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    margin-right: 0px;
 }
 body {
     background-color: #e8faff;
@@ -216,13 +216,13 @@ figure img{
     font-weight: bold;
     margin-bottom: 0.9375rem;
 }
-.fa-hand-point-down {
-    display: none;
-}
 .result {
     padding: 0 4rem 0 4rem;
 }
 
+.fa-hand-point-down {
+    display: none;
+}
 /* --------------------- search.html : maps (Google Maps CSS) -----------------*/
 table {
     font-size: 0.875rem;
