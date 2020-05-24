@@ -21,71 +21,68 @@
     </head>
 
     <body>
-        <!-- add div "class = wrap" for footer at bottom always -->
-        <div class="wrap">
-            <header>
-                <!-- Script - For Bootstrap Navbar : https://getbootstrap.com/docs/4.4/components/navbar/ -->
-                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <header>
+            <!-- Script - For Bootstrap Navbar : https://getbootstrap.com/docs/4.4/components/navbar/ -->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="index.html">
-                        <h3>Korea Travel</h3>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler01" aria-controls="navbarToggler01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarToggler01">
-                        <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0 text-right">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="search.html">Search</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-
-            <!-- Images' sources : Please refer on the README.me file -->
-            <section class="container-fluid">
-                <div class="mainpage">
-                    <h3 class="section-heading">Message us :)</h3>
-                    <p class="form-text">Please input all items.</p>
-                    <form onsubmit="return sendMail(this);" id="mail-form">
-                        <div class="row center-form align-items-center message-form">
-                            <label for="subject">Subject :</label>
-                            <select class="form-control custom-select" id="subject" required>
-                                <option selected disabled value="">Please select a type of subject.</option>
-                                <option value="General">General question about South Korea</option>
-                                <option value="Language">Language or translation</option>
-                                <option value="Cooperation">Cooperation</option>
-                                <option value="Other">Other</option>
-                            </select>
-
-                            <label for="name">Name : </label>
-                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-
-                            <label for="email">E-mail : </label>
-                            <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="E-mail" required />
-
-                            <label for="message">Message : </label>
-                            <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
-                            <br />
-                            <div id="send-button-group">
-                                <button class="btn btn-info center-block" type="submit" value="Submit">Send</button>
-                                <button class="btn btn-warning" type="reset" value="Reset">Reset</button>
-                            </div>
-                        </div>
-                    </form>
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <h3>Korea Travel</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler01" aria-controls="navbarToggler01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler01">
+                    <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0 text-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-        </div>
+            </nav>
+        </header>
+
+        <!-- Images' sources : Please refer on the README.me file -->
+        <section class="container-fluid">
+            <div class="mainpage">
+                <h3 class="section-heading">Message us :)</h3>
+                <p class="form-text">Please input all items.</p>
+                <form onsubmit="return sendMail(this);" id="mail-form">
+                    <div class="row center-form align-items-center message-form">
+                        <label for="subject">Subject :</label>
+                        <select class="form-control custom-select" id="subject" required>
+                            <option selected disabled value="">Please select a type of subject.</option>
+                            <option value="General">General question about South Korea</option>
+                            <option value="Language">Language or translation</option>
+                            <option value="Cooperation">Cooperation</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                        <label for="name">Name : </label>
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+
+                        <label for="email">E-mail : </label>
+                        <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="E-mail" required />
+
+                        <label for="message">Message : </label>
+                        <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+                        <br />
+                        <div id="send-button-group">
+                            <button class="btn btn-info center-block" type="submit" value="Submit">Send</button>
+                            <button class="btn btn-warning" type="reset" value="Reset">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
 
         <footer>
             <div class="social">

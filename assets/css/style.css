@@ -7,16 +7,12 @@ html, body {
 body {
     background-color: #e8faff;
     font-family: "Open Sans", sans-serif;
+    margin-bottom: 15rem;
 }
 .mainpage {
     margin-top: 3.4375rem;
 }
 
-/* --------------- fixed footer bottom ---------- */
-.wrap {
-    min-height: 100%;
-    padding-bottom: 120px;
-}
 /* --------------- navbar ---------- */
 .navbar {
     background-color: #2e49b8;
@@ -274,7 +270,7 @@ table {
     flex: 1 1 140px;
 }
 #autocomplete {
-    width: 100%;
+    width: 15rem;
 }
 #country {
     width: 100%;
@@ -344,7 +340,7 @@ table {
 }
 /* --------------- footer ---------- */
 footer {
-    margin-top: -20px;
+    margin-top: 50px;
     padding: 5px;
     text-align: center;
     width: 100%;
