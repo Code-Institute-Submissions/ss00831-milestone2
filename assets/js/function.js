@@ -1,8 +1,7 @@
-// currency widget
+// currency widget : https://openexchangerates.org/
 $(document).ready(function () {
   $.ajax({
-    url:
-      "https://openexchangerates.org/api/latest.json?app_id=fa03050e6438469cac69431c18b2af58",
+    url:"https://openexchangerates.org/api/latest.json?app_id=fa03050e6438469cac69431c18b2af58",
     dataType: "json",
     type: "GET",
     success: function (api) {
@@ -74,7 +73,7 @@ function showDivs2(n, no) {
   x[slideIndex[no] - 1].style.display = "block";
 }
 
-// for weather widget
+// for weather widget : https://weatherwidget.io
 !(function (d, s, id) {
   var js,
     fjs = d.getElementsByTagName(s)[0];
@@ -87,19 +86,21 @@ function showDivs2(n, no) {
 })(document, "script", "weatherwidget-io-js");
 
 // for weather and currency
-$(document).ready(function(){
-  $("#weather_toggle").click(function(){
+$(document).ready(function () {
+  $("#weather_toggle").click(function () {
     $(".widget-weather").toggle();
   });
-  $("#currency_toggle").click(function(){
+  $("#currency_toggle").click(function () {
     $(".widget-currency").toggle();
   });
 });
 
+// move to search.html
 function searchFunction() {
-    window.location.replace("search.html");
-} 
+  window.location.replace("search.html");
+}
 
+// move to widget section
 function widgetsFunction() {
-    window.location.replace("#widget_div");
+  window.location.replace("#widget_div");
 }

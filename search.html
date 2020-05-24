@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-
-    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
     <!-- bootstrap 4.4.1 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- hover.css 2.3.1 -->
@@ -56,10 +53,10 @@
 
         <!-- Images' sources : Please refer on the README.me file -->
         <section class="container-fluid">
-        
         <div class="mainpage">
-          <h3 class="section-heading">Place Navigator</h3>
-          <div class="row">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+            <h3 class="section-heading">Place Navigator</h3>
+            <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 search-area">
               <div>
                 <h6 class="small-heading">Search places by...</h6>
@@ -81,7 +78,6 @@
                 </p>
               </div>
             </div>
-            
             <div class = "row">
               <div class="place_type box">
               <div class="place_search">
@@ -122,16 +118,15 @@
                         <br />
                     </form> 
                 </div>
-                
               </div>
               </div>
             </div>
-
             </div>
-
             <div class="col-12 col-sm-12 col-md-12 col-lg-8">
               <div class="place_name box">
-                <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
+                <div>
+                    <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
+                </div>
                 <div id="map_name"></div>
               </div>
               <div class="place_type box">
@@ -140,18 +135,15 @@
             </div>
           </div>
         </div>
-        
       </section>
-      <section class="container-fluid result">
+      <section class="container-fluid result place_type box">
         <div class="row">
         <div class="col-md-12 listing-box">
-        
         <div id="listing">
           <table id="resultsTable">
             <tbody id="results"></tbody>
           </table>
         </div>
-
         <div style="display: none;">
           <div id="info-content">
             <table>
@@ -176,13 +168,11 @@
                 <td id="iw-website"></td>
               </tr>
             </table>
-          </div></div>
-        </div></div>
-      
-      
+          </div>
+          </div>
+        </div>
+        </div> 
       </section>
-      
-                <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
     </div>
 
     <footer>
@@ -190,8 +180,8 @@
             <ul class="list-inline social-links">
                 <li class="list-inline-item">
                     <a target="_blank" href="https://www.facebook.com/ss831">
-                        <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span></a>
+                    <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span></a>
                 </li>
                 <li class="list-inline-item">
                     <a target="_blank" href="https://www.linkedin.com/in/songhei-lee-a7ba04139/">
@@ -214,8 +204,7 @@
 
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA0TwhmtHwPbGqxzQ3-7IQhyWFGhru_tk&libraries=places&callback=initialize" async defer></script>
-
-    <!--<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
     <script src="assets/js/map.js"></script>
     <script src="assets/js/topbutton.js"></script>
 </body>

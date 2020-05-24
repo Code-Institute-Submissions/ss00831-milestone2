@@ -1,16 +1,21 @@
 # Korea travel mate
 Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. I am from South Korea and the purpose of the website is that I would love to help with your planning to visit Korea. The website offers short information about South Korea, real-time weather, real-time exchange currency, a function of a navigator. Visitors can send a message to the site owner when they want to get some help.
 
-## UX **
+## UX 
 
-### Preview
+### Preview **
 - Desktop 
 
 ![desktop](https://user-images.githubusercontent.com/53374745/78712714-524ad280-7919-11ea-86fa-8962d99c3c6f.PNG)
 
+- Tablet 
+
+![mobile](https://user-images.githubusercontent.com/53374745/78712715-537bff80-7919-11ea-899c-c03cc68a02df.jpg)
+
 - Mobile 
 
 ![mobile](https://user-images.githubusercontent.com/53374745/78712715-537bff80-7919-11ea-899c-c03cc68a02df.jpg)
+
 
 ### Usecase diagram
 ![Usecase](https://user-images.githubusercontent.com/53374745/76595465-f8aede00-64fb-11ea-9a6f-0246bb1391b4.png)
@@ -26,9 +31,10 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
  - A function of sending a message: E-mail API
 
 ### Mockup
-- [Desktop](https://github.com/ss00831/Milestone1/blob/master/assets/mockup/ms1.pdf)
-- [Tablet](https://github.com/ss00831/Milestone1/blob/master/assets/mockup/ms1-tablet.pdf)
-- [Mobile](https://github.com/ss00831/Milestone1/blob/master/assets/mockup/ms1-mobile.pdf)
+- [Desktop](https://github.com/ss00831/milestone2/files/4668180/ms2.pdf)
+- [Tablet](https://github.com/ss00831/milestone2/files/4668179/ms2.-.tablet.pdf)
+- [Mobile](https://github.com/ss00831/milestone2/files/4668178/ms2.-.mobile.pdf)
+
 
 ## Features
  
@@ -93,15 +99,15 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
 
 ## Deployment
  
-### My Milestone1 page address : https://ss00831.github.io/milestone1/
+### My Milestone2 page address : https://ss00831.github.io/milestone2/
 
-### To deploy this page to GitHub Pages from its GitHub repository (https://github.com/ss00831/milestone1) :
+### To deploy this page to GitHub Pages from its GitHub repository (https://github.com/ss00831/milestone2) :
 1. From the menu items near the top of the page, select [Settings].
 2. Scroll down to the [GitHub Pages] section.
 3. [Source] - click the drop-down menu labelled None - select [Master Branch].
 4. The page will automatically be refreshed, and the website is deployed.
  (If this step is failed, refresh the settings page and try again the "step 3".)
-5. If the deployment is succeeded, you can see a message as "Your site is published at https://ss00831.github.io/milestone1/". Try to retrieve the link to the deployed website.
+5. If the deployment is succeeded, you can see a message as "Your site is published at https://ss00831.github.io/milestone2/". Try to retrieve the link to the deployed website.
 
 ### How to run this project locally
 
@@ -112,7 +118,7 @@ To clone this project from GitHub :
 4. (Optional) Change the current working directory to the location where you want the cloned directory to be made.
 5. Type "git clone", and then paste the URL you copied in Step 3.
 ```
-git clone https://github.com/ss00831/milestone1.git
+git clone https://github.com/ss00831/milestone2.git
 ```
 6. Press Enter and check the directory where you located on Step 4.
 
@@ -145,7 +151,3 @@ git clone https://github.com/ss00831/milestone1.git
 - https://bootstrapcreative.com/pattern/jumbotron-background-image-opacity-bootstrap-4/
 5. Cut off image in CSS
 - https://medium.com/@elad/how-to-crop-images-with-css-b8471d402b16
-
-
-
-

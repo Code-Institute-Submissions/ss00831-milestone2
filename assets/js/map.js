@@ -1,9 +1,8 @@
 // Map selector
-
-$(document).ready(function() {
-        $('.box').hide(); //hide
-        $('.place_name').show(); //set default class to be shown here, or remove to hide all
-})
+$(document).ready(function () {
+  $(".box").hide(); //hide
+  $(".place_name").show(); //set default class to be shown here, or remove to hide all
+});
 $(document).ready(function () {
   $('input[name="places"]').click(function () {
     var inputValue = $(this).attr("value");
@@ -68,14 +67,16 @@ function initMap() {
   autocomplete.addListener("place_changed", onPlaceChanged);
 
   // Add a DOM event listener to react when the user selects a country.
-  document.getElementById("country").addEventListener("change", setAutocompleteCountry);
+  document
+    .getElementById("country")
+    .addEventListener("change", setAutocompleteCountry);
 }
 
 // When the user selects a city, get the place details for the city and
 // zoom the map in on the city.
 function onPlaceChanged() {
   var place = autocomplete.getPlace();
-  
+
   if (place.geometry) {
     map.panTo(place.geometry.location);
     map.setZoom(13);
@@ -85,65 +86,57 @@ function onPlaceChanged() {
   }
 }
 
-
-$('input[name=placestype]').click(function searchPlace() {
-    if(this.value == "touristattraction"){
-  place_value = $('#touristattraction').value;
-  var search = {
-    bounds: map.getBounds(),
-    types: ["tourist_attraction", "amusement_park"]
-  };
-}else if(this.value == "accommodation"){
-  place_value = $('#accommodation').value;
-  var search = {
-    bounds: map.getBounds(),
-    types: ["lodging"]
-  };
-}
-else if(this.value == "restaurant"){
-  place_value = $('#restaurant').value;
-  var search = {
-    bounds: map.getBounds(),
-    types: ["restaurant", "meal_delivery", "meal_takeaway"]
-  };
-}
-else if(this.value == "drink"){
-  place_value = $('#drink').value;
-  var search = {
-    bounds: map.getBounds(),
-    types: ["bar", "liquor_store", "cafe", "night_club", "bakery"]
-  };
-}
-else if(this.value == "shopping"){
-  place_value = $('#shopping').value;
-  var search = {
-    bounds: map.getBounds(),
-    types: ["clothing_store",
-      "department_store",
-      "shopping_mall"]
-  };
-}
-else if(this.value == "supermarket"){
-  place_value = $('#supermarket').value;
-  var search = {
-    bounds: map.getBounds(),
-    types: ["supermarket", "grocery_or_supermarket", "convenience_store"]
-  };
-}
-else if(this.value == "atm"){
-  place_value = $('#atm').value;
-  var search = {
-    bounds: map.getBounds(),
-    types: ["atm", "bank"]
-  };
-}
-else if (this.value == "health"){
-    place_value = $('#health').value;
+// The reference of Place types : https://developers.google.com/places/supported_types
+$("input[name=placestype]").click(function searchPlace() {
+  if (this.value == "touristattraction") {
+    place_value = $("#touristattraction").value;
     var search = {
-    bounds: map.getBounds(),
-    types: ["pharmacy", "drugstore", "hospital"]
-  };
-}
+      bounds: map.getBounds(),
+      types: ["tourist_attraction", "amusement_park"],
+    };
+  } else if (this.value == "accommodation") {
+    place_value = $("#accommodation").value;
+    var search = {
+      bounds: map.getBounds(),
+      types: ["lodging"],
+    };
+  } else if (this.value == "restaurant") {
+    place_value = $("#restaurant").value;
+    var search = {
+      bounds: map.getBounds(),
+      types: ["restaurant", "meal_delivery", "meal_takeaway"],
+    };
+  } else if (this.value == "drink") {
+    place_value = $("#drink").value;
+    var search = {
+      bounds: map.getBounds(),
+      types: ["bar", "liquor_store", "cafe", "night_club", "bakery"],
+    };
+  } else if (this.value == "shopping") {
+    place_value = $("#shopping").value;
+    var search = {
+      bounds: map.getBounds(),
+      types: ["clothing_store", "department_store", "shopping_mall"],
+    };
+  } else if (this.value == "supermarket") {
+    place_value = $("#supermarket").value;
+    var search = {
+      bounds: map.getBounds(),
+      types: ["supermarket", "grocery_or_supermarket", "convenience_store"],
+    };
+  } else if (this.value == "atm") {
+    place_value = $("#atm").value;
+    var search = {
+      bounds: map.getBounds(),
+      types: ["atm", "bank"],
+    };
+  } else if (this.value == "health") {
+    place_value = $("#health").value;
+    var search = {
+      bounds: map.getBounds(),
+      types: ["pharmacy", "drugstore", "hospital"],
+    };
+  }
 
   places.nearbySearch(search, function (results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -151,7 +144,7 @@ else if (this.value == "health"){
       clearMarkers();
       // Create a marker for each hotel found, and
       // assign a letter of the alphabetic to each marker icon.
-      
+
       for (var i = 0; i < results.length; i++) {
         var markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
         var markerIcon = MARKER_PATH + markerLetter + ".png";
@@ -168,11 +161,11 @@ else if (this.value == "health"){
         setTimeout(dropMarker(i), i * 100);
         addResult(results[i], i);
       }
-    }else if (status === google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
-        alert("No result");
+    } else if (status === google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
+      alert("No result");
     }
   });
-})
+});
 function clearMarkers() {
   for (var i = 0; i < markers.length; i++) {
     if (markers[i]) {
@@ -309,6 +302,7 @@ function initAutocomplete() {
     center: { lat: 37.5326, lng: 127.024612 },
     zoom: 8,
     mapTypeId: "roadmap",
+    mapTypeControl: false,
   });
 
   // Create the search box and link it to the UI element.
@@ -316,7 +310,7 @@ function initAutocomplete() {
   var options = {
     componentRestrictions: { country: "kr" },
   };
-  var searchBox = new google.maps.places.SearchBox(input);
+  var searchBox = new google.maps.places.SearchBox(input, options);
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
 
   // Bias the SearchBox results towards current map's viewport.
