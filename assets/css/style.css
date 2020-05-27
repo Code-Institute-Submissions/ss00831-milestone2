@@ -74,6 +74,7 @@ body {
      width: 12.4375rem;
 }
 #myBtn {
+    display: none;
     position: fixed;
     bottom: 40px;
     right: 30px;
@@ -214,8 +215,8 @@ figure img{
     font-weight: bold;
     margin-bottom: 0.9375rem;
 }
-.result {
-    padding: 0 4rem 0 4rem;
+.listing-box {
+    padding: 0 3rem;
 }
 
 .fa-hand-point-down {
@@ -241,8 +242,7 @@ table {
     z-index: 1;
 }
 .listing-box {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    
 }
 #listing {
     height: 250px;
@@ -264,7 +264,6 @@ table {
     -webkit-box-flex: 1 1 190px;
     -ms-flex: 1 1 190px;
     flex: 1 1 190px;
-    margin: 0 8px;
 }
 #controls {
    -webkit-box-flex: 1 1 140px;
@@ -272,7 +271,7 @@ table {
     flex: 1 1 140px;
 }
 #autocomplete {
-    width: 15rem;
+    width: 12.5rem;
 }
 #country {
     width: 100%;
@@ -368,8 +367,7 @@ footer {
     }
     /* --------------- search.html : result list part ---------- */
     .listing-box {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0 2rem;
     }
 }
 
@@ -389,9 +387,9 @@ footer {
 @media screen and (max-width: 768.02px) {
     /* --------------- search.html : result list part ---------- */
     .listing-box {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding: 0 1.5rem;
     }
+
     /* --------------------- contact.html : contact form -----------------*/
     .form-text{
         padding-left: 1.6rem;
@@ -427,9 +425,6 @@ footer {
     }
     .box {
         padding: 0.5rem;
-    }
-    .result {
-        padding: 0 1.5rem 0 1.5rem;
     }
     /* --------------------- contact.html : contact form -----------------*/
     .form-text{
