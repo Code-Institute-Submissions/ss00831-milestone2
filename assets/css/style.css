@@ -108,8 +108,8 @@ body {
 }
 .weather-button {
     height: 1.875rem;
+    background-color: #18548f;
     color: white;
-    background-color: black;
     text-align: center;
     vertical-align: middle;
     margin: 0 0.3125rem 0 0.3125rem;
@@ -151,7 +151,8 @@ div .row .currency {
     background-color: yellowgreen;
 }
 .currency-button {
-    background-color: red;
+    background-color: #18548f;
+    color: white;
     margin: 0 0.3125rem 0 0.3125rem;
 }
 .cal {
@@ -346,8 +347,6 @@ footer {
     padding: 5px;
     text-align: center;
     width: 100%;
-    height: 80px;
-    background-color: #6cc4f0;
 }
 .social {
     text-align: center;
