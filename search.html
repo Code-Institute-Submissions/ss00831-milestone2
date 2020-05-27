@@ -79,6 +79,8 @@
                                 <div id="findhotels">City Name:</div>
                                 <div id="locationField">
                                     <input id="autocomplete" placeholder="Enter a city" type="text" />
+                                    
+                                    <button onclick="resetPlaceFunction()" id="typeReset" type="reset" value="Reset"><i class="fas fa-undo-alt" aria-hidden="true"></i></button>
                                 </div>
                                 <div id="controls">
                                     <select id="country">
@@ -121,6 +123,7 @@
                         <div class="place_name box">
                             <div>
                                 <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+                                <button onclick="resetPlaceFunction()" id="nameReset" type="reset" value="Reset"><i class="fas fa-undo-alt" aria-hidden="true"></i></button>
                             </div>
                             <div id="map_name"></div>
                         </div>
@@ -134,6 +137,7 @@
         <section class="container-fluid result place_type box">
             <div class="row">
                 <div class="col-md-12 listing-box">
+                    <h3>Result</h3>
                     <div id="listing">
                         <table id="resultsTable">
                             <tbody id="results"></tbody>

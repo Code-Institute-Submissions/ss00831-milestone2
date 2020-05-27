@@ -3,22 +3,18 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
 
 ## UX 
 
-### Preview **
+### Preview
 - Desktop 
 
-![desktop](https://user-images.githubusercontent.com/53374745/78712714-524ad280-7919-11ea-86fa-8962d99c3c6f.PNG)
+![desktop_index](https://user-images.githubusercontent.com/53374745/83000187-4f5f8a80-a00a-11ea-9d7e-843b032e8a75.JPG)
 
 - Tablet 
 
-![mobile](https://user-images.githubusercontent.com/53374745/78712715-537bff80-7919-11ea-899c-c03cc68a02df.jpg)
+![table_index](https://user-images.githubusercontent.com/53374745/83000543-ceed5980-a00a-11ea-9f7b-cb38a5cebc03.JPG)
 
 - Mobile 
 
-![mobile](https://user-images.githubusercontent.com/53374745/78712715-537bff80-7919-11ea-899c-c03cc68a02df.jpg)
-
-
-### Usecase diagram
-![Usecase](https://user-images.githubusercontent.com/53374745/76595465-f8aede00-64fb-11ea-9a6f-0246bb1391b4.png)
+![mobile_index](https://user-images.githubusercontent.com/53374745/83000558-d280e080-a00a-11ea-9a63-223b1409a356.jpg)
 
 ### User scenario
 1. A potential traveler wants to see the currency rate and weather information
@@ -71,31 +67,25 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
 
 ## Testing
 0. Device / Browser spec
-- For functional testing
+- For Usability testing
 
     ![DeviceSpec](https://user-images.githubusercontent.com/53374745/78711907-0f3c2f80-7918-11ea-8ef7-98a3142a9a19.png)
 
-- For responsive & browser testing
-
-    ![Browserinfo](https://user-images.githubusercontent.com/53374745/78711903-0ea39900-7918-11ea-815f-e8be0c3d0abc.png)
-
-
 1. Code validation
 - html (https://validator.w3.org/, Validate by URI) : No error
-- CSS (https://jigsaw.w3.org/css-validator/, Validate by direct input) : No error, 1 warning (line 1)
-- JS (https://jshint.com/)
+- CSS (https://jigsaw.w3.org/css-validator/, Validate by direct input) : No error
+- JS (https://jshint.com/) : 11 warnings (map.js - 10 warnings, function.js - 1 warning)
 
-2. Functional Test : All functional test cases (55 items) : Pass
-- Please refer the result.
-    [Test Result] [rev03_testcases.xlsx](https://github.com/ss00831/milestone1/files/4454598/rev03_testcases.xlsx)
+2. Usability Test
+- All functional test cases (19 items) : Pass
+- All inpute data test cases (6 items) : Pass
+- Please refer the detailed result.
+    [rev01_testcases_20200527.xlsx](https://github.com/ss00831/milestone2/files/4687777/rev01_testcases_20200527.xlsx)
+374745/83000558-d280e080-a00a-11ea-9a63-223b1409a356.jpg)
 
-3. Responsive & Browser Test
-- Pass condition :
-    1. Must be resized to the image and content by the window sizes and resolutions
-    1. All links need to work like the Full test 
-    1. All images/contents/links must not be broken.
 
-    ![browsertest](https://user-images.githubusercontent.com/53374745/78868081-8b329680-7a42-11ea-9b15-7a15dc172e3f.PNG)
+### Testing history
+1. 27 May 2020 - Usability Testing
 
 ## Deployment
  

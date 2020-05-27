@@ -12,6 +12,8 @@ $(document).ready(function () {
     });
 });
 
+
+
 // This example uses the autocomplete feature of the Google Places API.
 // It allows the user to find all hotels in a given place, within a given
 // country. It then displays markers for all the hotels returned,
@@ -306,6 +308,9 @@ function initAutocomplete() {
         searchBox.setBounds(map.getBounds());
     });
 
+    var nameResetButton = document.getElementById("nameReset");
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(nameResetButton);
+
     var markers = [];
     // Listen for the event fired when the user selects a prediction and retrieve
     // more details for that place.
@@ -356,4 +361,12 @@ function initAutocomplete() {
         });
         map.fitBounds(bounds);
     });
+}
+
+function resetPlaceFunction(){
+    clearMarkers();
+    clearResults();
+    $('input[id="pac-input"]').val("");
+    $('input[id="autocomplete"]').val("");
+    $('input[name="placestype"]').prop('checked', false);
 }

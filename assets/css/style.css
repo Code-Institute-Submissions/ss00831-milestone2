@@ -7,10 +7,9 @@ html, body {
 body {
     background-color: #e8faff;
     font-family: "Open Sans", sans-serif;
-    margin-bottom: 15rem;
 }
 .mainpage {
-    margin-top: 3.4375rem;
+    margin-top: 2.5rem;
 }
 
 /* --------------- navbar ---------- */
@@ -197,14 +196,17 @@ figure img{
 /* --------------------- search.html : maps (custom) -----------------*/
 #map_name, #map_type {
     border: 2px solid;
-    min-height: 30rem;
+    min-height: 25rem;
 }
 #pac-input{
     width: 25rem;
     font-size:1rem;
 }
+#nameReset{
+    height: 25.5px;
+}
 .search-area {
-    padding-left: 2.5rem;
+    padding-left: 1.5rem;
     padding-right: 0;
 }
 .small-heading {
@@ -331,6 +333,7 @@ table {
 }
 #send-button-group {
     text-align: center;
+    margin-bottom: 2rem;
 }
 #send-button-group > button {
     margin: 0 1rem 0 1rem;
