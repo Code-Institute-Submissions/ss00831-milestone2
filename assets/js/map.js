@@ -158,7 +158,11 @@ $("input[name=placestype]").click(function searchPlace() {
                 addResult(results[i], i);
             }
         } else if (status === google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
+            clearMarkers();
+            clearResults();
+            $('input[name="placestype"]').prop('checked', false);
             alert("No result");
+
         }
     });
 });
@@ -298,7 +302,8 @@ function initAutocomplete() {
     // Create the search box and link it to the UI element.
     var input = document.getElementById("pac-input");
     var options = {
-        componentRestrictions: { country: "kr" },
+        componentRestrictions: { 
+            country: "kr"},
     };
     var searchBox = new google.maps.places.SearchBox(input, options);
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
