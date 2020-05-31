@@ -27,6 +27,7 @@ body {
 }
 .navbar .nav-link {
     font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
     color: gainsboro;
     font-weight: bold;
     font-size: 1.25rem;
@@ -184,7 +185,7 @@ figure img{
     margin:-17% 0 -24.5% 0;
 }
 .info-text {
-    padding : 1rem 3rem 2rem 3rem;
+    padding : 1rem 8rem 2rem 8rem;
 }
 .basic-info{
     margin: 0 auto;
@@ -196,6 +197,14 @@ figure img{
 }
 
 /* --------------------- search.html : maps (custom) -----------------*/
+.note{
+    font-size: 0.85rem;
+    font-weight: bold;
+    background-color: #ffffba;
+    padding: 0.5rem;
+    margin: 0 1.5rem;
+
+}
 #map_name, #map_type {
     border: 2px solid;
     min-height: 25rem;
@@ -241,9 +250,6 @@ table {
     top: 0;
     width: 440px;
     z-index: 1;
-}
-.listing-box {
-    
 }
 #listing {
     height: 250px;
@@ -360,6 +366,10 @@ footer {
 }
 
 @media screen and (max-width: 992.02px) {
+    /* --------------- index.html : text information ---------- */
+    .info-text {
+        padding : 1rem 6rem 2rem 6rem;
+    }
     /* --------------- index.html : widget - currency part ---------- */
     .jumbotron {
         padding: 3.633625rem 0 4rem 0;
@@ -384,6 +394,10 @@ footer {
 }
  
 @media screen and (max-width: 768.02px) {
+    /* --------------- index.html : text information ---------- */
+    .info-text {
+        padding : 1rem 4rem 2rem 4rem;
+    }
     /* --------------- search.html : result list part ---------- */
     .listing-box {
         padding: 0 1.5rem;
@@ -407,12 +421,19 @@ footer {
 }
  
 @media screen and (max-width: 576.02px) {
+    /* --------------- index.html : text information ---------- */
+    .info-text {
+        padding : 1rem 3rem 2rem 3rem;
+    }
     /* --------------------- index.html : Buttons -----------------*/
     .jump_link > button{
         margin-top : 0.5rem;
         margin-bottom : 0.5rem;
     }
     /* --------------- search.html : map (custom) ---------- */
+    .note{
+        margin: 0 0.5rem;
+    }
     #map_name, #map_type {
         border: 2px solid;
         min-height: 20rem;
@@ -437,6 +458,10 @@ footer {
 }
  
 @media screen and (max-width: 450.02px) {
+    /* --------------- index.html : text information ---------- */
+    .info-text {
+        padding : 1rem 2rem 2rem 2rem;
+    }
     /* --------------- search.html : map (#map_name) ---------- */
     #pac-input{
         width: 15rem;
