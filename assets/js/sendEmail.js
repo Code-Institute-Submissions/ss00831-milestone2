@@ -1,3 +1,4 @@
+// Send message function - EmailJS API
 (function () {
     emailjs.init("user_GSvvZT0J6KvBUXPodOVCh");
 })();

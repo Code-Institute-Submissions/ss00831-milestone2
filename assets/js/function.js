@@ -104,4 +104,3 @@ function searchFunction() {
 function widgetsFunction() {
     window.location.replace("#widget_div");
 }
-

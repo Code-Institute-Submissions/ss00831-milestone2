@@ -79,13 +79,28 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
 2. Usability Test
 - All functional test cases (19 items) : Pass
 - All inpute data test cases (6 items) : Pass
-- Please refer the detailed result.
-    [rev01_testcases_20200527.xlsx](https://github.com/ss00831/milestone2/files/4687777/rev01_testcases_20200527.xlsx)
-374745/83000558-d280e080-a00a-11ea-9a63-223b1409a356.jpg)
+
+3. Responsive & Browser Test
+- Pass condition :
+    1. Must be resized to the image and content by the window sizes and resolutions
+    1. All links need to work like the Full test 
+    1. All images/contents/links must not be broken.
+
+    ![browsertest](https://user-images.githubusercontent.com/53374745/78868081-8b329680-7a42-11ea-9b15-7a15dc172e3f.PNG)
+- For responsive & browser testing
+
+    ![Browserinfo](https://user-images.githubusercontent.com/53374745/78711903-0ea39900-7918-11ea-815f-e8be0c3d0abc.png)
+
+4. The detailed result : Please refer the test sheet as below.
+
+5. The past test results
+- 27 May 2020 : [rev01_testcases_20200527.xlsx](https://github.com/ss00831/milestone2/files/4687777/rev01_testcases_20200527.xlsx)
+
 
 
 ### Testing history
 1. 27 May 2020 - Usability Testing
+2. 02 Jun 2020 - Usability Testing / Responsive & Browser Test
 
 ## Deployment
  
