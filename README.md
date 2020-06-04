@@ -36,7 +36,10 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
  
 ### Existing Features
 - Information : Short facts about Korea.
+- Widgets : To see the real-time currency rate (EUR-KRW/USD-KRW/GBP-KRW/SEK-KRW) and weather in Seoul, Incheon and Busan
 - Navigation : To find a place by name or city.
+
+    ※ Regarding names of many places in Korean: Please be aware that a lot of destinations on this map will feature a Korean name due to many places haven't supplied their name in English. But the address will always be in English and the business website will be featured when available.
 - Message : Anyone who is interested in South Korea can send a message.
 
 ### Features Left to Implement
@@ -138,11 +141,13 @@ git clone https://github.com/ss00831/milestone2.git
 
 ### Media
 1. Main image : https://pixabay.com/sv/photos/landskap-resor-sunset-south-korea-1950544/
+
 2. Weather information images : 
  - https://wallpaperaccess.com/
  - https://pixabay.com/sv/photos/tre-kustv%C3%A4gen-beach-resor-landskap-2620056/
  - https://wallpaperaccess.com/
  - https://wallpaperaccess.com/
+
 3. Currency rate background image : https://pixabay.com/sv/photos/don-lagring-betalning-sedlar-skatt-1264858/
 
 ### Acknowledgements
