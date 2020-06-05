@@ -81,7 +81,7 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
 
 2. Usability Test
 - All functional test cases (26 items) : Pass
-- All inpute data test cases (6 items) : Pass
+- All data test cases (real-time date - 2 items, input data - 6 items) : Pass
 
 3. Responsive & Browser Test
 - Pass condition :
@@ -95,9 +95,10 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
     ![Browserinfo](https://user-images.githubusercontent.com/53374745/78711903-0ea39900-7918-11ea-815f-e8be0c3d0abc.png)
 
 4. The detailed result : Please refer the test sheet as below.
-- Result: [rev02_testcases_20200602.xlsx](https://github.com/ss00831/milestone2/files/4717157/rev02_testcases_20200602.xlsx)
+- Result: 
 
 5. The past test results
+- 02 Jun 2020: [rev02_testcases_20200602.xlsx](https://github.com/ss00831/milestone2/files/4717157/rev02_testcases_20200602.xlsx)
 - 27 May 2020: [rev01_testcases_20200527.xlsx](https://github.com/ss00831/milestone2/files/4687777/rev01_testcases_20200527.xlsx)
 
 
@@ -105,6 +106,7 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
 ### Testing history
 1. 27 May 2020 - Usability Testing
 2. 02 Jun 2020 - Usability Testing / Responsive & Browser Test
+3. 05 Jun 2020 - Usability Testing / Responsive & Browser Test
 
 ## Deployment
  
