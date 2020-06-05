@@ -423,7 +423,13 @@ footer {
 @media screen and (max-width: 576.02px) {
     /* --------------- index.html : text information ---------- */
     .info-text {
-        padding : 1rem 3rem 2rem 3rem;
+        padding : 2rem 3rem 2rem 3rem;
+    }
+    .indeximg {
+        margin-bottom: 0rem;
+    }
+    .basic-info{
+        margin-bottom: 2rem;
     }
     /* --------------------- index.html : Buttons -----------------*/
     .jump_link > button{

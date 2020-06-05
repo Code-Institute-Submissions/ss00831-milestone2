@@ -95,7 +95,7 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
     ![Browserinfo](https://user-images.githubusercontent.com/53374745/78711903-0ea39900-7918-11ea-815f-e8be0c3d0abc.png)
 
 4. The detailed result : Please refer the test sheet as below.
-- Result: 
+- Result: [rev03_testcases_20200605.xlsx](https://github.com/ss00831/milestone2/files/4736713/rev03_testcases_20200605.xlsx)
 
 5. The past test results
 - 02 Jun 2020: [rev02_testcases_20200602.xlsx](https://github.com/ss00831/milestone2/files/4717157/rev02_testcases_20200602.xlsx)
