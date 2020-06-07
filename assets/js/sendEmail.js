@@ -1,4 +1,5 @@
-// Send message function - EmailJS API
+// Source : EmailJS API - https://www.emailjs.com/
+// Send message function 
 (function () {
     emailjs.init("user_GSvvZT0J6KvBUXPodOVCh");
 })();
@@ -22,4 +23,3 @@ function sendMail(contactForm) {
         );
     return false; // To block from loading a new page
 }
-

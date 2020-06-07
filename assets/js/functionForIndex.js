@@ -1,4 +1,5 @@
-// currency widget : https://openexchangerates.org/
+// Currency widget 
+// Source : https://openexchangerates.org/
 $(document).ready(function () {
     $.ajax({
         url: "https://openexchangerates.org/api/latest.json?app_id=fa03050e6438469cac69431c18b2af58",
@@ -26,7 +27,8 @@ $(document).ready(function () {
     });
 });
 
-// for widget slide buttons
+// For widget slide buttons
+// Source : https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_two
 var slideIndex = [1, 1];
 var slideId = ["widget-group"];
 var slideId2 = ["widget-group2"];
@@ -73,7 +75,8 @@ function showDivs2(n, no) {
     x[slideIndex[no] - 1].style.display = "block";
 }
 
-// for weather widget : https://weatherwidget.io
+// For weather widget 
+// Source : https://weatherwidget.io
 !(function (d, s, id) {
     var js,
         fjs = d.getElementsByTagName(s)[0];
@@ -85,7 +88,7 @@ function showDivs2(n, no) {
     }
 })(document, "script", "weatherwidget-io-js");
 
-// for weather and currency
+// For weather and currency
 $(document).ready(function () {
     $("#weather_toggle").click(function () {
         $(".widget-weather").toggle();
@@ -95,12 +98,12 @@ $(document).ready(function () {
     });
 });
 
-// move to search.html
+// Navigator button : Move to search.html
 function searchFunction() {
     window.location.replace("search.html");
 }
 
-// move to widget section
+// Weather & Currency button : Move to widget section
 function widgetsFunction() {
     window.location.replace("#widget_div");
 }

@@ -53,7 +53,7 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
 - CSS3 
 - JavaScript
 
-### Tools & Libraries
+### Tools & Libraries 
 - JQuery 3.3.1 (https://jquery.com)
 - Popper.JS 1.14.0 (https://popper.js.org/)
 - Bootstrap 4.4.1 (https://getbootstrap.com/)
@@ -62,6 +62,8 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
 - Github (https://github.com/)
 - Gitpod (https://www.gitpod.io/)
 - Hover.css (https://css-tricks.com/almanac/selectors/h/hover/)
+
+### APIs
 - Google maps (https://developers.google.com/maps/documentation)
 - Email JS (http://emailjs.com/)
 - Weatherwidget (https://weatherwidget.io/)
@@ -164,3 +166,7 @@ git clone https://github.com/ss00831/milestone2.git
 - https://bootstrapcreative.com/pattern/jumbotron-background-image-opacity-bootstrap-4/
 5. Cut off image in CSS
 - https://medium.com/@elad/how-to-crop-images-with-css-b8471d402b16
+6. Scroll Back To Top Button
+- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+7. Manual Slide show (For weather & currency rate widgets)
+- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_two

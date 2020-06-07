@@ -1,4 +1,5 @@
-// When the user scrolls down 20px from the top of the document, show the button
+// Source : https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+// Top button : When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("myBtn").style.display = "block";

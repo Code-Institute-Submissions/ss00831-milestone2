@@ -1,3 +1,4 @@
+// Source : https://www.tutorialrepublic.com/faq/show-hide-divs-based-on-radio-button-selection-in-jquery.php
 // Map selector
 $(document).ready(function () {
     $(".box").hide(); //hide
@@ -80,6 +81,7 @@ function onPlaceChanged() {
 }
 
 // The reference of Place types : https://developers.google.com/places/supported_types
+// Search places by types
 $("input[name=placestype]").click(function searchPlace() {
     if (this.value == "touristattraction") {
         place_value = $("#touristattraction").value;
@@ -365,6 +367,7 @@ function initAutocomplete() {
     });
 }
 
+// Clear the result
 function resetPlaceFunction(){
     clearMarkers();
     clearResults();
