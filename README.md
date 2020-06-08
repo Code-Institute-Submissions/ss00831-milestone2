@@ -79,7 +79,7 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
 1. Code validation
 - html (https://validator.w3.org/, Validate by URI) : No error
 - CSS (https://jigsaw.w3.org/css-validator/, Validate by direct input) : No error
-- JS (https://jshint.com/) : 11 warnings (map.js - 10 warnings, function.js - 1 warning)
+- JS (https://jshint.com/) : 11 warnings (map.js - 10 warnings, functionForIndex.js - 1 warning)
 
 2. Usability Test
 - All functional test cases (26 items) : Pass
