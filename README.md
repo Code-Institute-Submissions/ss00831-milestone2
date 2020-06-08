@@ -74,7 +74,7 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
 0. Device / Browser spec
 - For Usability testing
 
-    ![DeviceSpec](https://user-images.githubusercontent.com/53374745/78711907-0f3c2f80-7918-11ea-8ef7-98a3142a9a19.png)
+    ![device_spec](https://user-images.githubusercontent.com/53374745/84033367-06f48500-a999-11ea-847e-a179bb27ce0c.JPG)
 
 1. Code validation
 - html (https://validator.w3.org/, Validate by URI) : No error
@@ -94,15 +94,14 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
     ![browsertest](https://user-images.githubusercontent.com/53374745/78868081-8b329680-7a42-11ea-9b15-7a15dc172e3f.PNG)
 - For responsive & browser testing
 
-    ![Browserinfo](https://user-images.githubusercontent.com/53374745/78711903-0ea39900-7918-11ea-815f-e8be0c3d0abc.png)
+    ![Browser_info](https://user-images.githubusercontent.com/53374745/84033370-0825b200-a999-11ea-9794-02977dbbee79.JPG)
 
 4. The detailed result : Please refer the test sheet as below.
-- Result: [rev03_testcases_20200605.xlsx](https://github.com/ss00831/milestone2/files/4736713/rev03_testcases_20200605.xlsx)
+- Result: [rev03_testcases_20200605.xlsx](https://github.com/ss00831/milestone2/files/4746075/rev03_testcases_20200605.xlsx)
 
 5. The past test results
 - 02 Jun 2020: [rev02_testcases_20200602.xlsx](https://github.com/ss00831/milestone2/files/4717157/rev02_testcases_20200602.xlsx)
 - 27 May 2020: [rev01_testcases_20200527.xlsx](https://github.com/ss00831/milestone2/files/4687777/rev01_testcases_20200527.xlsx)
-
 
 
 ### Testing history
