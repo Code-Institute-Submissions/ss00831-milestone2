@@ -52,6 +52,7 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 /* --------------- heading ---------- */
 .section-heading {
     font-family: "Raleway", sans-serif;
@@ -69,10 +70,10 @@ body {
     margin-bottom : 1.5rem;
 }
 .jump_link > button{
-     margin-left : 1.5rem;
-     margin-right : 1.5rem;
-     height: 4rem;
-     width: 12.4375rem;
+    margin-left : 1.5rem;
+    margin-right : 1.5rem;
+    height: 4rem;
+    width: 12.4375rem;
 }
 #myBtn {
     display: none;
@@ -326,6 +327,7 @@ table {
 .place_search {
     display: inline;
 }
+
 /* --------------------- contact.html : contact form -----------------*/
 .form-text{
     padding-left: 2.75rem;
@@ -347,6 +349,7 @@ table {
 .message-form > select, input, textarea {
     margin-bottom: 0.9375rem;
 }
+
 /* --------------- footer ---------- */
 footer {
     margin-top: 50px;
@@ -402,7 +405,6 @@ footer {
     .listing-box {
         padding: 0 1.5rem;
     }
-
     /* --------------------- contact.html : contact form -----------------*/
     .form-text{
         padding-left: 1.6rem;

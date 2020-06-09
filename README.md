@@ -110,7 +110,8 @@ Some people are interested in traveling to Korea, K-pop, K-beauty, and culture. 
 3. 05 Jun 2020 - Usability Testing / Responsive & Browser Test
 
 ## Deployment
- 
+- I recommend that you access the webpage through this milestone2 address link.
+
 ### My Milestone2 page address : https://ss00831.github.io/milestone2/
 
 ### To deploy this page to GitHub Pages from its GitHub repository (https://github.com/ss00831/milestone2) :
